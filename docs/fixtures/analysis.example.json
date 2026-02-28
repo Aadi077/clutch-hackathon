@@ -1,0 +1,119 @@
+{
+  "apiVersion": "v1",
+  "schemaVersion": "1.0.0",
+  "analysisId": "a_01JABCDEF0123456789XYZ",
+  "createdAt": "2026-02-28T03:14:15Z",
+  "updatedAt": "2026-02-28T03:14:15Z",
+  "status": "ready",
+  "sport": "nba",
+  "league": "NBA",
+  "season": "2025-26",
+  "player": {
+    "playerId": "p_123",
+    "fullName": "First Last",
+    "teamIdAtGame": "t_456"
+  },
+  "game": {
+    "gameId": "g_789",
+    "date": "2026-02-27",
+    "homeTeamId": "t_home",
+    "awayTeamId": "t_away"
+  },
+  "moment": {
+    "period": 4,
+    "clock": "08:32",
+    "timeRemainingSecInPeriod": 512,
+    "timeOffsetAnchor": {
+      "type": "event",
+      "eventId": "e_555"
+    },
+    "score": {
+      "home": 92,
+      "away": 103
+    },
+    "scoreDifferential": -11
+  },
+  "params": {
+    "windowBeforeSec": 300,
+    "windowAfterSec": 300,
+    "seriesIntervalSec": 5,
+    "similarLimit": 20,
+    "turningPointThreshold": 0.05
+  },
+  "derived": {
+    "winProbAtMoment": 0.18,
+    "winProbEndOfWindow": 0.31,
+    "winProbDelta": 0.13,
+    "scoreDifferentialEndOfWindow": -4,
+    "scoreDifferentialDelta": 7,
+    "playerStatsInWindow": {
+      "points": 9,
+      "assists": 1,
+      "rebounds": 2,
+      "turnovers": 0
+    }
+  },
+  "series": {
+    "winProbability": [
+      { "t": -300, "v": 0.22 },
+      { "t": -295, "v": 0.21 },
+      { "t": 0, "v": 0.18 },
+      { "t": 300, "v": 0.31 }
+    ],
+    "scoreDifferential": [
+      { "t": -300, "v": -9 },
+      { "t": 0, "v": -11 },
+      { "t": 300, "v": -4 }
+    ]
+  },
+  "events": [
+    {
+      "eventId": "e_1001",
+      "t": 42,
+      "type": "SCORE",
+      "subtype": "3PT_MADE",
+      "description": "Player made 3PT",
+      "teamId": "t_456",
+      "playerId": "p_123",
+      "scoreAfter": { "home": 95, "away": 103 },
+      "scoreDifferentialAfter": -8,
+      "winProbAfter": 0.25,
+      "winProbDelta": 0.07
+    }
+  ],
+  "turningPoints": [
+    {
+      "eventId": "e_1001",
+      "t": 42,
+      "winProbDelta": 0.07,
+      "label": "3PT Made"
+    }
+  ],
+  "similar": {
+    "items": [
+      {
+        "gameId": "g_222",
+        "playerId": "p_123",
+        "moment": {
+          "period": 4,
+          "clock": "07:58",
+          "scoreDifferential": -10
+        },
+        "outcome": {
+          "won": true,
+          "winProbAtMoment": 0.21,
+          "winProbEndOfWindow": 0.38,
+          "winProbDelta": 0.17,
+          "playerPointsInWindow": 11,
+          "scoreDifferentialDelta": 9
+        }
+      }
+    ],
+    "aggregate": {
+      "count": 20,
+      "comebackRate": 0.27,
+      "avgWinProbDelta": 0.06,
+      "avgPlayerPointsInWindow": 8.4
+    }
+  }
+}

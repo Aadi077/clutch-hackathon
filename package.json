@@ -1,0 +1,19 @@
+{
+  "name": "clutch-hackathon",
+  "version": "1.0.0",
+  "description": "Moment analysis API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "apiVersion": "v1",
+  "meta": {
+    "analysisId": "a_01JABCDEF0123456789XYZ",
+    "metric": "winProbability",
+    "intervalSec": 5,
+    "window": 300,
+    "count": 4
+  },
+  "points": [
+    { "t": -300, "v": 0.22 },
+    { "t": -295, "v": 0.21 },
+    { "t": 0, "v": 0.18 },
+    { "t": 300, "v": 0.31 }
+  ]
+}
